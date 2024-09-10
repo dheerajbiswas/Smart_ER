@@ -1,0 +1,10 @@
+SMART-ER Alert
+
+A prompt has been generated for teleconsultation of a patient (Name: Manish Sharma, UHID NO.: 1234asd) seen at MMI Raipur. 
+
+Possible STEMI
+HEAR Score: 6 
+
+Please contact for further details.
+Mr. Dheeraj Kumar Biswas 
+Contact: 2147483647

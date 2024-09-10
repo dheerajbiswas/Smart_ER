@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Smart-ER</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons  -->
+  <link href="assets/img/image_logo.png" rel="icon">
+  <link href="assets/img/image_logo.png" rel="favicon">
+  <link href="assets/img/IIT_Bhilai_logo.png" rel="logo">
+  <link href="assets/img/Aims logo.png" rel="logo">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Moderna - v2.0.1
+  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container">
+
+      <div class="logo float-left">
+        <h1 class="text-light"><a href="index.html"><span>Smart-ER platform</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu float-right d-none d-lg-block">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="about.html">About</a></li>
+
+          <li><a href="blog.html">Contact Us</a></li>
+
+        </ul>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Fill Proforma</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Fill Proforma</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+
+
+
+    <section class="fill proforma" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+      <div class="container">
+
+        <form style="box-sizing: 20px; border: 1px solid black;padding: 5px;">
+          <label for="name" style="text-align: left;padding: 5px;">Name:</label>
+          <input type="text" id="name" value="<?php echo $data['patientName'] ?>">
+          <label for="age_sex" style="text-align: center;padding: 5px;">Age/Sex: </label>
+          <input type="text" id="age_sex" value="<?php echo $data['age'].' / '. $data['gender'] ?>" >
+          <label for="date" style="text-align: right;padding: 5px;">Date: </label>
+          <input type="text" id="date" value="<?php echo $data['date'] ?>">
+          <br><label for="uhid" style="text-align: left;padding: 5px;">UHID No.: </label>
+          <input type="text" id="uhid" value="<?php echo $data['patientid'] ?>">
+          <label for="time" style="text-align: right;padding: 5px;padding-right: 2px;">Time: </label>
+          <input type="text" id="time" value="<?php echo $data['time'] ?>">
+      </form>
+
+        <div class="container">
+
+
+        </div>
+        <h2 style="text-align: center;">Acute chest discomfort proforma</h2>
+
+        <p style="text-align: center;">
+          (Fill up when a patient presents to the ED with anterior chest discomfort/upper
+          abdominal pain/Jaw pain for < 7d duration) </p>
+            <p style="text-align: center; font-weight: bold;">Call for an ECG immediately</p>
+
+            <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+              <div class="container">
+
+                <div class="section-title" id="gcc">
+                  <h2>Chest pain descriptors:</h2>
+                </div>
+                <form>
+                  <label for="time" style="text-align: right;padding: 5px;">Location: </label>
+                  <input type="text" id="location">
+                  <br>
+                  <label for="time" style="text-align: right;padding: 5px;">Duration: </label><input type="text"
+                    name="Duration:">
+                  <br>
+                  <label for="time" style="text-align: right;padding: 5px;">Character: </label> <input type="text"
+                    name="Character:">
+                  <br>
+                  <label for="time" style="text-align: right;padding: 5px;">Severity: </label>
+                  <select name="Severity:" id="severity">
+                    <option value="none">Select</option>
+                    <option value="Mild">Mild</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="Servere">Severe</option>
+                  </select>
+                  <br>
+                  <label for="time" style="text-align: right;padding: 5px;">Radiation: </label>
+                  <input type="text" name="Radiation:">
+                  <br>
+
+                </form>
+              </div>
+            </section>
+
+            <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+              <div class="container">
+
+                <div class="section-title" id="gcc">
+                  <h2>Aggravating/relieving factors:</h2>
+                </div>
+
+
+
+                <br>
+                Tick:
+                <br>
+                <input type="checkbox" id="Position" value="Position">
+                <label for="Position">Position</label>
+                <br>
+                <input type="checkbox" id="Exertion" value="Exertion">
+                <label for="Exertion">Exertion</label>
+                <br>
+                <input type="checkbox" id="Meals" value="Meals">
+                <label for="Meals">Meals</label>
+                <br>
+                <input type="checkbox" id="Diurnal" value="Diurnal">
+                <label for="Diurnal">Diurnal</label>
+                <br>
+                <input type="checkbox" id="Palpation" value="Palpation">
+                <label for="Palpation">Palpation</label>
+                <br>
+                <input type="checkbox" id="Response to medicines" value="Response to medicines">
+                <label for="Response to medicines">Response to medicines</label>
+                <br>
+                <br>
+
+                Pain similar to previous MI (Y/N):
+                <input type="checkbox" id="mi" value="yes">
+                <br>
+              </div>
+            </section>
+            <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+              <div class="container">
+
+                <div class="section-title" id="gcc">
+                  <h2>Comorbidities:</h2>
+                </div>
+
+
+                <input type="checkbox" id="Diabetes" value="Diabetes">
+                <label for="Diabetes">Diabetes</label>
+                <br>
+                <input type="checkbox" id="Hypertension" value="Hypertension">
+                <label for="Hypertension">Hypertension</label>
+                <br>
+                <input type="checkbox" id="Smoker" value="Smoker">
+                <label for="Smoker">Smoker</label>
+                <br>
+                <input type="checkbox" id="Obesity" value="Obesity">
+                <label for="Obesity">Obesity</label>
+                <br>
+                <input type="checkbox" id="Hypercholesterolemia" value="Hypercholesterolemia">
+                <label for="Hypercholesterolemia">Hypercholesterolemia</label>
+                <br>
+                <input type="checkbox" id="Family history of CAD" value="Family history of CAD">
+                <label for="Family history of CAD">Family history of CAD</label>
+                <br>
+                <input type="checkbox" id="Other" value="Other">
+                <label for="Other">Other</label>
+                <br>
+              </div>
+            </section>
+            <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+              <div class="container">
+
+                <div class="section-title" id="gcc">
+                  <h2>Known atherosclerotic vascular disease?</h2>
+                </div>
+                <input type="checkbox" id="Peripheral arterial disease" value="Peripheral arterial disease">
+                <label for="Peripheral arterial disease">Peripheral arterial disease</label>
+                <br>
+                <input type="checkbox" id="Past MI" value="Past MI">
+                <label for="Past MI">Past MI</label>
+                <br>
+                <input type="checkbox" id="Past coronary revascularization" value="Past coronary revascularization">
+                <label for="Past coronary revascularization">Past coronary revascularization</label>
+                <br>
+                <input type="checkbox" id="Stroke" value="Stroke">
+                <label for="Stroke">Stroke</label>
+                <br>
+                <br>
+                <br>
+              </div>
+            </section>
+            <table>
+              <th colspan="2">Associated Complaints (Tick)</th>
+              <tr>
+                <td>Nausea and vomiting</td>
+                <td><input type="checkbox" id="NV" value="NV"></td>
+              </tr>
+              <tr>
+                <td>Shortness of breath</td>
+                <td><input type="checkbox" id="SB" value="SB"></td>
+              </tr>
+              <tr>
+                <td>Syncope </td>
+                <td><input type="checkbox" id="syn" value="syn"></td>
+              </tr>
+              <tr>
+                <td>Diaphoresis</td>
+                <td><input type="checkbox" id="diaph" value="diaph"></td>
+              </tr>
+              <tr>
+                <td>Fever</td>
+                <td><input type="checkbox" id="fever" value="fever"></td>
+              </tr>
+              <tr>
+                <td>Expectoration</td>
+                <td><input type="checkbox" id="expect" value="expect"></td>
+              </tr>
+              <tr>
+                <td>Hemoptysis</td>
+                <td><input type="checkbox" id="hemosys" value="hemosys"></td>
+              </tr>
+              <tr>
+                <td>Recent trauma</td>
+                <td><input type="checkbox" id="trauma" value="trauma"></td>
+              </tr>
+              <tr>
+                <td>Others</td>
+                <td><input type="checkbox" id="oth" value="oth"></td>
+              </tr>
+            </table>
+
+            <br>
+            <br>
+            <br>
+
+            <table>
+              <th colspan="2">Vitals</th>
+              <tr>
+                <td>Pulse</td>
+                <td><input type="text" id="pulse" name="pulse"></td>
+              </tr>
+              <tr>
+                <td>BP (Right)</td>
+                <td><input type="text" id="bpright" name="bpright"></td>
+              </tr>
+              <tr>
+                <td>BP (Left)</td>
+                <td><input type="text" id="bpleft" name="bpleft"></td>
+              </tr>
+              <tr>
+                <td>RR</td>
+                <td><input type="text" id="rr" name="rr"></td>
+              </tr>
+              <tr>
+                <td>SpO2</td>
+                <td><input type="text" id="spo2" name="spo2"></td>
+              </tr>
+            </table>
+            <br>
+            <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+              <div class="container">
+
+                <div class="section-title" id="gcc">
+                  <h2>On examination:</h2>
+                </div>
+
+                <label for="Pedal">Pedal Edema (Y/N): </label>Pedal edema (Y/N):
+                <input type="checkbox" id="Pedal" value="Pedal">
+                <br>
+                <label for="calftender">Calf tenderness (Y/N): </label>Pedal edema (Y/N):
+                <input type="checkbox" id="calftender" value="calftender">
+                <br>
+                <label for="bil_breath">Bilateral breath sounds (equal?): </label>
+
+                <input type="checkbox" id="bil_breath" value="bil_breath">
+                <br>
+                Added auscultatory sounds:<input type="text" id="auscul">
+                <br>
+                Abdominal tenderness:<input type="text" id="abdtender">
+                <br>
+              </div>
+            </section>
+            <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+              <div class="container">
+
+                <div class="section-title" id="gcc">
+                  <h2>CVS examination:</h2>
+                </div>
+
+
+                S1 (normal /<input type="checkbox" id="s1" value="s1"><label for="s1"></label>abnormal)
+                <br>
+
+                S2 (normal /<input type="checkbox" id="s2" value="s2"><label for="s2"></label>abnormal),
+                <br>
+                S3 (present /<input type="checkbox" id="s3" value="s3"><label for="s3"></label>absent)
+                <br>
+                Pericardial rub (present /<input type="checkbox" id="pericard" value="pericard"><label
+                  for="pericard"></label>absent)
+                <br>
+                Murmur (present /<input type="checkbox" id="murmur" value="murmur"><label for="murmur"></label>absent)
+                <br>
+                Describe abnormalities (if any):<input type="text" id="otherAbnormal" name="anything">
+                <br>
+                <br>
+                <br>
+                <strong>Other clinical inputs:</strong><input type="text" id="otherClinical" name="anything">
+                <br>
+                <br>
+                <br>
+              </div>
+            </section>
+            <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+              <div class="container">
+
+                <div class="section-title" id="gcc">
+
+                </div>
+                <div class="row">
+                  <div id="admin" class="col s12">
+                    <div class="card material-table">
+                      <div class="table-header">
+                        <span class="table-title">HEAR Score</span>
+                        <div class="actions">
+
+                        </div>
+                      </div>
+                      <table id="datatable">
+                        <th colspan="2"></th>
+                        <tr>
+                          <td>History</td>
+                          <td>
+                            <p>
+                              Slightly suspicious for ACS 0 <br>
+                              Moderately suspicious 1 <br>
+                              Highly suspicious 2 <br>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>ECG changes</td>
+                          <td>
+                            <p>
+                              Normal 0 <br>
+                              LBBB/LVH or other repolarization abnormalities 1 <br>
+                              Significant ST deviation 2 <br>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Age</td>
+                          <td>
+                            <p>
+                              < 45 years 0 <br>
+                                45-64 years 1 <br>
+                                > 65 years 2 <br>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>CV risk factors</td>
+                          <td>
+                            <p>
+                              No risk factors 0 <br>
+                              1 or 2 risk factors 1 <br>
+                              > 3 risk factors or documented 2 <br>
+                              Atherosclerotic vascular disease 2 <br>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Total Score:</td>
+                          <td><input type="text" id="totalScore" name="spo2"></td>
+                        </tr>
+                      </table>
+                      <br>
+                      <br>
+                      <br>
+        </p>
+        </td>
+        </tr>
+        </table>
+      </div>
+      </div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col text-center">
+          <input type="button" onclick="window.location.href='chest-pain-proforma.html';" class="btn btn-warning btn-lg"
+            value="Submit" />
+        </div>
+      </div>
+
+      </form>
+
+      </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+
+    <div class="container">
+      <div class="copyright">
+
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
+
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
